@@ -1,0 +1,27 @@
+.form_container{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid;
+    height: 200px;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+}
+.allinput{
+    margin-right:10px;
+}
+.tableeleborder{
+    border-right: 1px solid;
+    min-width: 150px;
+}
+.tablecontainer1{
+    border: 1px solid;
+    margin-top: 20px;
+}
+.tablecontainer{
+    border: 1px solid;
+}
+.headborder{
+    display:flex;
+    border: 1px solid red;
+}
