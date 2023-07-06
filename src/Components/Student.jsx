@@ -21,6 +21,7 @@ const Student=()=>{
     setlastname("");
     setMobile("");
     setcity("");
+    console.log(submittedData);
   };
 
     return(
@@ -55,16 +56,18 @@ const Student=()=>{
               <th>City</th>
             </tr>
           </thead>
+          {submittedData.map((data, index) => (
           <tbody className="headborder">
-            {submittedData.map((data, index) => (
+            
               <tr key={index}>
                 <td className="tableeleborder">{data.firstname}</td>
                 <td className="tableeleborder">{data.lastname}</td>
                 <td className="tableeleborder">{data.mobile}</td>
                 <td>{data.city}</td>
               </tr>
-            ))}
-          </tbody>
+              
+            
+          </tbody>))}
         </table>
       )}
         </div>
